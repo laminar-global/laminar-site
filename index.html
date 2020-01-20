@@ -7,7 +7,7 @@
   <!-- Trying to force IE to perform at its best-->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <!-- Meta description, aim for about 150 characters-->
-  <meta name="description" content="">
+  <meta name="description" content="Laminar is an enterprise-class video-streaming PAAS aimed at content companies looking to launch a Netflix-scale service">
   <!-- Stylesheets-->
   <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/css/linea.min.css">
@@ -19,7 +19,6 @@
   <link rel="manifest" href="./favicons/manifest.json">
   <link rel="shortcut icon" href="favicon.ico">
   <meta name="msapplication-config" content="./favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
   <!-- Site title-->
   <style>
     @font-face {
@@ -54,7 +53,7 @@
       font-weight: bold;
     }
   </style>
-  <title>Zulu - 50 90 50</title>
+  <title>Laminar</title>
 </head>
 <body>
   <!-- Navigation-->
@@ -73,9 +72,6 @@
             <a class="waves-effect waves-light" href="#api">API</a>
           </li>
           <li>
-            <a class="waves-effect waves-light" href="#faq">FAQ</a>
-          </li>
-          <li>
             <a class="waves-effect waves-light" href="#contact">Contact</a>
           </li>
         </ul>
@@ -86,9 +82,6 @@
           </li>
           <li>
             <a class="waves-effect waves-light" href="#api">API</a>
-          </li>
-          <li>
-            <a class="waves-effect waves-light" href="#faq">FAQ</a>
           </li>
           <li>
             <a class="waves-effect waves-light" href="#contact">Contact</a>
@@ -103,7 +96,7 @@
     
     <section class="hero scrollspy" id="intro">
       <div class="container">
-        <h1>We are a small dedicated team that passionately produces award–winning hand crafted content</h1>
+        <h1>Laminar is an enterprise-class video-streaming PAAS aimed at content companies looking to launch a Netflix-scale service</h1>
       </div>
     </section>
     
@@ -120,90 +113,53 @@
             <p><code>POST /video/ingest</code></p>
             <p>
 <pre>{
-  "input": "https://storage.googleapis.com/muxdemofiles/mux-video-intro.mp4",
-  "playback_policy": "public"
+  "srcVideo": "Puppies_Bath_4096x2304_375mb",
+  "archiveSource": true,
+  "frameCapture": true
 }</pre>
             </p>
             <div class="divider"></div>
             <p><code>API Response Body</code></p>
             <p>
 <pre>{
-  "data": {
-    "status": "preparing",
-    "playback_ids": [
-    {
-      "policy": "public",
-      "id": "rOVqIYKbFBlSZlAdR161luDzuWpY0000Fk"
-    }
-    ],
-    "mp4_support": "none",
-    "master_access": "none",
-    "id": "PdnAYPy1UpdTHnUvzIcn9GkC9C5fVmRJ",
-    "created_at": "1578914541"
-  }
+  "status": "Ingest",
+  "guid": "4259211e-78f2-4323-9aaa-2265c27937e4",
+  "srcVideo": "Puppies_Bath_4096x2304_375mb"
 }</pre>
             </p>
           </div>
           <div class="col s12 l4 big-margin-on-medium-and-down">
             <div class="price-box">
               <h4><sup>Step 1&nbsp;</sup><span class="price">Post</span></h4>
-              <p>There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you’re heaven fruitful under rule Don’t fourth years our. Kind itself days.</p>
+              <p>This step is an secured system call. The request body contains the file name in the S3 bucket associated with the business user, and returns the state of the task and the video’s unique ID.</p>
+              <p>The task only triggers when the reference file exists in the S3 bucket.</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col s12 l8 big-margin-on-medium-and-down" style="background-color: rgba(255, 255, 255, 0.2)">
-            <p><code>https://magical.url/mp4</code></p>
-            <p><code>https://magical.url/hls</code></p>
-            <p><code>https://magical.url/dash</code></p>
+            <p><code>GET /video/<select style="display: inline-block; width: auto; height: auto; background: transparent; padding: 0; margin-left: 2px; margin-right: 2px;">
+              <option value="hls" selected>hls</option>
+              <option value="dash">dash</option>
+            </select>/?guid=<span style="background-color: rgba(255, 255, 255, 0.2); padding-left: 4px; padding-right: 4px; margin-left: 2px; margin-right: 2px; border-radius: 2px;">4259211e-78f2-4323-9aaa-2265c27937e4</span></code></p>
+            <div class="divider"></div>
+            <p><code>API Response Body</code></p>
+            <p>
+              <pre>{
+  "url": "https://d1kx6xd26ja9y4.cloudfront.net/4259211e-78f2-4323-9aaa-2265c27937e4/hls/Puppies_Bath_4096x2304_375mb.m3u8"
+}</pre>
+            </p>                
+            <p>
+              <div style="position: relative; width: 100%; padding-bottom: 56.25%; background:rgb(247, 100, 82)">
+                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">video.js player goes here</div>
+              </div>
+            </p>
           </div>
           <div class="col s12 l4 big-margin-on-medium-and-down">
             <div class="price-box featured">
               <h4><sup>Step 2&nbsp;</sup><span class="price">Stream</span></h4>
-              <p>Something something, plug and play, something HLS, DASH & mp4.</p>
-              <p>There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you’re heaven fruitful under rule Don’t fourth years our. Kind itself days.</p>
+              <p>This is a developer call. After the ingestion process is complete, the files are uploaded to a CDN, and at the moment we serve 2 formats for video streaming, HLS & DASH. We allow for the developer to pick the format.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- FAQ section-->
-    <section class="faq scrollspy" id="faq">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 center">
-            <h2>FAQ</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <ul class="collapsible flow-text" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header active waves-effect waves-light">— Is the starter pack really free?</div>
-                <div class="collapsible-body">
-                  <p>A cattle she’d creepeth. That light make. Void two they’re, can’t us don’t creepeth. Fruitful there herb from signs she’d created whales them. Lights which face. Divided they’re first. Dry wherein own itself green it.</p>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header waves-effect waves-light">— What is your return policy?</div>
-                <div class="collapsible-body">
-                  <p>May years spirit of grass shall. Form also seas had that very was lesser creature void. Fill under she’d own is light stars isn’t moved you’re.</p>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header waves-effect waves-light">— Can I quit my subscription at any time?</div>
-                <div class="collapsible-body">
-                  <p>There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you’re heaven fruitful under rule Don’t fourth years our. Kind itself days.</p>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header waves-effect waves-light">— Can I upgrade my plan?</div>
-                <div class="collapsible-body">
-                  <p>Aliquam Maecenas consectetuer nisl cum inceptos. Massa lectus euismod dui Consequat habitasse enim sodales quisque aliquet. Semper condimentum id, hendrerit sodales mi nam netus dictumst platea. Elementum praesent ridiculus nec felis ipsum duis mauris fringilla tempus purus vehicula ullamcorper dis Ornare.</p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
