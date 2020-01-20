@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/css/linea.min.css">
   <link rel="stylesheet" href="./assets/css/zulu.min.css?v=release">
+  <link rel="stylesheet" href="https://unpkg.com/video.js@7/dist/video-js.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" />
   <!-- Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
@@ -138,20 +140,22 @@
         </div>
         <div class="row">
           <div class="col s12 l8 big-margin-on-medium-and-down" style="background-color: rgba(255, 255, 255, 0.2)">
-            <p><code>GET /video/<select style="display: inline-block; width: auto; height: auto; background: transparent; padding: 0; margin-left: 2px; margin-right: 2px;">
+            <p><code>GET /video/<select id="format" style="display: inline-block; width: auto; height: auto; background: transparent; padding: 0; margin-left: 2px; margin-right: 2px;">
               <option value="hls" selected>hls</option>
               <option value="dash">dash</option>
             </select>/?guid=<span style="background-color: rgba(255, 255, 255, 0.2); padding-left: 4px; padding-right: 4px; margin-left: 2px; margin-right: 2px; border-radius: 2px;">4259211e-78f2-4323-9aaa-2265c27937e4</span></code></p>
             <div class="divider"></div>
             <p><code>API Response Body</code></p>
             <p>
-              <pre>{
+              <pre id="response">{
   "url": "https://d1kx6xd26ja9y4.cloudfront.net/4259211e-78f2-4323-9aaa-2265c27937e4/hls/Puppies_Bath_4096x2304_375mb.m3u8"
 }</pre>
             </p>                
             <p>
-              <div style="position: relative; width: 100%; padding-bottom: 56.25%; background:rgb(247, 100, 82)">
-                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">video.js player goes here</div>
+              <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background:rgb(247, 100, 82);">
+                <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+                  <video id="player" class="video-js vjs-theme-fantasy" style="width: 100%; height: 100%" />
+                </div>
               </div>
             </p>
           </div>
@@ -246,5 +250,39 @@
         <script src="./assets/js/config.js"></script>
         <script src="./assets/js/zulu.js"></script>
         <script src="./assets/js/explosion.js"></script>
+        <!-- Laminar scripts -->
+        <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+        <script>
+          (() => {
+            const $format = $('#format')
+            const $response = $('#response')
+            const urls = {
+              hls: 'https://d1kx6xd26ja9y4.cloudfront.net/4259211e-78f2-4323-9aaa-2265c27937e4/hls/Puppies_Bath_4096x2304_375mb.m3u8',
+              dash: 'https://d1kx6xd26ja9y4.cloudfront.net/4259211e-78f2-4323-9aaa-2265c27937e4/dash/Puppies_Bath_4096x2304_375mb.mpd'
+            }
+            $(document).ready(update)
+            $format.on('change', update)
+
+            const player = videojs('player', {
+              controls: true,
+              playsinline: true,
+              preload: 'auto',
+              html5: {
+                hls: {
+                  overrideNative: true,
+                  enableLowInitialPlaylist: true,
+                  limitRenditionByPlayerDimensions: false
+                }
+              }
+            })
+
+            function update() {
+              const format = $format.val()
+              const url = urls[format]
+              $response.text(JSON.stringify({ url: url }, null, 2))
+              player.src(url)
+            }
+          })();
+        </script>
       </body>
 </html>
