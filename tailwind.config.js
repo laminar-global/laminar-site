@@ -1,11 +1,16 @@
 module.exports = {
   theme: {
+    fontFamily: {
+      sans: ['Barlow', 'sans-serif'],
+      display: ['Barlow Semi Condensed', 'sans-serif'],
+      body: ['Barlow', 'sans-serif']
+    },
     extend: {
       colors: {
         primary: {
-          lighter: 'hsl(207, 73%, 52%)',
-          default: 'hsl(207, 73%, 57%)',
-          darker: 'hsl(207, 73%, 44%)'
+          lighter: 'hsl(7, 91%, 80%)',
+          default: 'hsl(7, 91%, 65%)',
+          darker: 'hsl(7, 91%, 45%)'
         }
       }
     }

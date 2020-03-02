@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const sizes = {
   default: `py-3 px-8`,
@@ -6,21 +7,24 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', size, ...props }) => {
   return (
-    <button
-      type="button"
+    <AnchorLink
       className={`
         ${sizes[size] || sizes.default}
         ${className}
+        font-display
+        uppercase
         bg-primary
         hover:bg-primary-darker
         rounded
         text-white
-    `}
+        hover:text-white
+      `}
+      {...props}
     >
       {children}
-    </button>
+    </AnchorLink>
   );
 };
 
