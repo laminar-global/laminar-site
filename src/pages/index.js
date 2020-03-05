@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
+import Form from '../components/Form';
 import HeroImage from '../svg/HeroImage';
 import Icon10X from '../svg/Icon10X';
 import IconZeroT from '../svg/IconZeroT';
@@ -155,14 +156,24 @@ export default () => (
       className="container mx-auto my-20 px-8 py-24 bg-gray-100 sm:rounded-lg text-center"
     >
       <h3 className="font-display uppercase font-semibold text-4xl">Zero Cap-Ex Pricing</h3>
-      <p className="text-l text-gray-600">
-        One simple cost for everything that drops as you scale.
-        <br />
-        We are always aligned with your business model.
+      <p className="text-l text-gray-600 mx-auto w-full md:w-1/2">
+        One simple cost for everything that drops as you scale. We are always aligned with your
+        business model.
       </p>
-      <p className="mt-8">
-        <Button size="l">Get Started</Button>
-      </p>
+      <Form />
     </section>
   </Layout>
 );
+
+// <script type="text/javascript">
+// {`
+// var _iub = _iub || [];
+// _iub.csConfiguration = {"lang":"en","siteId":1815327,"countryDetection":true,"cookiePolicyId":53698920, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center","acceptButtonColor":"#0073CE","acceptButtonCaptionColor":"white","customizeButtonColor":"#DADADA","customizeButtonCaptionColor":"#4D4D4D","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","textColor":"black","backgroundColor":"white" }};
+// `}
+// </script>
+// <script
+// type="text/javascript"
+// src="//cdn.iubenda.com/cs/iubenda_cs.js"
+// charset="UTF-8"
+// async
+// ></script>

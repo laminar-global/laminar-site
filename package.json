@@ -5,12 +5,16 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "build:lambda": "netlify-lambda build src/functions",
+    "dev": "gatsby develop --port 9000",
+    "dev:lambda": "netlify-lambda serve src/functions --port 9001"
   },
   "dependencies": {
     "gatsby": "^2.18.18",
     "gatsby-theme-codebushi": "1.0.0",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
     "react": "^16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.12.0"
