@@ -31,8 +31,9 @@ export default () => (
             Netflix-scale service.
           </p>
           <p className="mt-8 md:mt-12">
+            <a href="https://laminarglobal.pipedrive.com/scheduler/vXl8ABSA/meet-us-at-ibc-22" target="_blank" class="mr-2 py-4 px-12 font-display uppercase bg-primary-darker hover:bg-primary rounded text-white hover:text-white" >Book A Meeting</a>
             <Button size="lg" href="#contact">
-              Get Started
+              Get In Touch
             </Button>
           </p>
         </div>
