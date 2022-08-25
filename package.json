@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "build:lambda": "netlify-lambda build src/functions",
-    "dev": "gatsby develop --port 9000",
+    "dev": "gatsby develop --port 9050",
     "dev:lambda": "netlify-lambda serve src/functions --port 9001"
   },
   "dependencies": {
