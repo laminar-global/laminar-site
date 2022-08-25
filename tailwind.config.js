@@ -1,5 +1,12 @@
 module.exports = {
   theme: {
+    aspectRatio: {
+      none: 0,
+      square: [1, 1],
+      "16/9": [16, 9],
+      "4/3": [4, 3],
+      "21/9": [21, 9]
+    },
     fontFamily: {
       sans: ['Barlow', 'sans-serif'],
       display: ['Barlow Semi Condensed', 'sans-serif'],
@@ -15,6 +22,12 @@ module.exports = {
       }
     }
   },
-  variants: {},
-  plugins: []
+  variants: {
+    aspectRatio: ['responsive'],
+    extend: {},
+  },
+  plugins: [
+    require('tailwindcss-aspect-ratio'),
+    require('tailwindcss-responsive-embed')
+  ]
 };

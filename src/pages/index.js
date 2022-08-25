@@ -41,6 +41,49 @@ export default () => (
     <section className="px-8 py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+          Streaming is hard.
+        </h2>
+      </div>
+      <div class="relative flex overflow-x-hidden text-gray-400 streaming-marquee">
+        <div class="py-12 animate-marquee whitespace-nowrap">
+          <span class="text-xl mx-4">Live and Video on Demand</span>
+          <span class="text-xl mx-4">Content License</span>
+          <span class="text-xl mx-4">Management by Geography</span>
+          <span class="text-xl mx-4">Apps for TVs and STBs</span>
+          <span class="text-xl mx-4">Payment Gateways, Bundles and Partnerships</span>
+          <span class="text-xl mx-4">Analytics and Machine Learning</span>
+          <span class="text-xl mx-4">Global Tax</span>
+          <span class="text-xl mx-4">Management and Regulatory Compliance</span>
+        </div>
+
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+          <span class="text-xl mx-4">Live and Video on Demand</span>
+          <span class="text-xl mx-4">Content License</span>
+          <span class="text-xl mx-4">Management by Geography</span>
+          <span class="text-xl mx-4">Apps for TVs and STBs</span>
+          <span class="text-xl mx-4">Payment Gateways, Bundles and Partnerships</span>
+          <span class="text-xl mx-4">Analytics and Machine Learning</span>
+          <span class="text-xl mx-4">Global Tax</span>
+          <span class="text-xl mx-4">Management and Regulatory Compliance</span>
+        </div>
+      </div>
+      <div className="container mx-auto text-center">
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          But it doesn't have to be. <br/>
+          Take a look at how we enabled <a href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch it's OTT service globally in 12 weeks at no upfront cost.
+        </p>
+        <div className="flex flex-wrap mt-12 text-left">
+          <div className="flex-none px-4 py-4 w-full">
+            <div class="embed-responsive aspect-ratio-16/9 embed-fix">
+              <iframe class="rounded-md embed-responsive-item" src="https://www.youtube.com/embed/fDzNSF384qk" title="Laminar and Chaupal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="px-8 py-20 lg:pb-40 lg:pt-48">
+      <div className="container mx-auto text-center">
+        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           Four Major Laminae
         </h2>
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">

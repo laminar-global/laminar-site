@@ -11,6 +11,7 @@
     "dev:lambda": "netlify-lambda serve src/functions --port 9001"
   },
   "dependencies": {
+    "tailwindcss-aspect-ratio": "^3.0.0",
     "gatsby": "^2.18.18",
     "gatsby-theme-codebushi": "1.0.0",
     "netlify-lambda": "^1.6.3",
@@ -21,13 +22,14 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
-    "prettier": "^1.19.1"
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1",
+    "tailwindcss-responsive-embed": "^1.0.0"
   }
 }
