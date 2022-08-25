@@ -31,8 +31,8 @@ export default () => (
             Netflix-scale service.
           </p>
           <p className="mt-8 md:mt-12">
-            <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary-darker hover:bg-primary rounded text-white hover:text-white" href="https://laminarglobal.pipedrive.com/scheduler/vXl8ABSA/meet-us-at-ibc-22" target="_blank">Book A Meeting</a>
-            <a class="lg:mr-2 lg:inline-block block py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white hover:text-white" href="#contact">Get In Touch</a>
+            <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary-darker hover:bg-primary rounded text-white text-center hover:text-white" href="https://laminarglobal.pipedrive.com/scheduler/vXl8ABSA/meet-us-at-ibc-22" target="_blank">Book A Meeting</a>
+            <a class="lg:mr-2 lg:inline-block block py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white" href="#contact">Get In Touch</a>
             {/* <Button size="lg" href="#contact">
               Get In Touch
             </Button> */}
