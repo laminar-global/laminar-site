@@ -14,10 +14,17 @@ import IconReliability from '../svg/IconReliability';
 import IconSpeed from '../svg/IconSpeed';
 import IconContentManagement from '../svg/IconContentManagement';
 import IconTrulyGlobal from '../svg/IconTrulyGlobal';
+import VideoIcon from '../svg/VideoIcon';
+import AppsIcon from '../svg/AppsIcon';
+import MonetiseIcon from '../svg/MonetiseIcon';
+import APIsIcon from '../svg/APIsIcon';
+import AkamaiLogo from '../svg/AkamaiLogo';
+import AWSLogo from '../svg/AWSLogo';
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto px-8 md:flex md:items-center">
         <div className="relative pb-8 md:pb-0 md:w-1/2">
           <HeroImage />
@@ -31,8 +38,8 @@ export default () => (
             Netflix-scale service.
           </p>
           <p className="mt-8 md:mt-12">
-            <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white" href="https://laminarglobal.pipedrive.com/scheduler/vXl8ABSA/meet-us-at-ibc-22" target="_blank">Book A Meeting</a>
-            <a class="lg:inline-block block py-4 px-12 font-display uppercase bg-white hover:bg-gray-100 rounded text-primary text-center hover:text-primary" href="#contact">Get In Touch</a>
+            <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white transition-all duration-200" href="https://calendly.com/laminar-streaming/meet-laminar-ibc-22?month=2022-09" target="_blank">Book A Meeting</a>
+            <a class="lg:inline-block block py-4 px-12 font-display uppercase bg-white hover:bg-gray-100 rounded text-primary text-center hover:text-primary transition-all duration-200" href="#contact">Get In Touch</a>
             {/* <Button size="lg" href="#contact">
               Get In Touch
             </Button> */}
@@ -40,10 +47,11 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="px-8 py-20 lg:pb-40 lg:pt-48">
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
-          Streaming is hard.
+          Streaming is hard...
         </h2>
       </div>
       <div class="relative flex overflow-x-hidden text-gray-400 streaming-marquee">
@@ -71,19 +79,220 @@ export default () => (
       </div>
       <div className="container mx-auto text-center">
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-          But it doesn't have to be. <br/>
-          Take a look at how we enabled <a href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch it's OTT service globally in 12 weeks at no upfront cost.
+          ...but it doesn't have to be.
+        </p>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          Take a look at how we enabled <a className="transition-all duration-200" href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch it's OTT service globally in 12 weeks at no upfront cost.
         </p>
         <div className="flex flex-wrap mt-12 text-left">
           <div className="flex-none px-4 py-4 w-full">
-            <div class="embed-responsive aspect-ratio-16/9 embed-fix">
-              <iframe class="rounded-md embed-responsive-item" src="https://www.youtube.com/embed/fDzNSF384qk" title="Laminar and Chaupal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="embed-responsive aspect-ratio-16/9 embed-fix border rounded-md">
+              <iframe class="rounded-md embed-responsive-item" src="https://www.youtube.com/embed/fDzNSF384qk?rel=0" title="Laminar and Chaupal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section className="px-8 py-20 lg:pb-40 lg:pt-48">
+
+    {/* <section className="pt-20 pb-10 md:pt-40 md:pt-20 offerings">
+
+      <div className="container mx-auto">
+
+        <div className="flex flex-wrap text-left">
+          <div className="flex-none w-full lg:w-1/8">
+            <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+              All of this as soon as you sign up
+            </h2>
+            <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+              The Laminar Platform has four major moving parts that come together seamlessly to help
+              content creators and companies build a streaming business.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap text-left mt-12 ">
+          <div className="flex-none p-8 w-full lg:w-1/4 offering bg-white rounded-md mb-8 border-2 border-gray-200">
+            <div class="icon-wrapper flex align-center">
+              <VideoIcon />
+            </div>
+            <p className="mt-6 font-display uppercase font-semibold text-xl">Video</p>
+            <ul className="mt-2 text-gray-600">
+              <li>Live</li>
+              <li>On Demand</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap text-left">
+          <div className="flex-none p-8 w-full lg:w-1/4 offering bg-white rounded-md mb-8 mr-8 border-2 border-gray-200">
+            <div class="icon-wrapper flex align-center">
+              <AppsIcon />
+            </div>
+            <p className="mt-6 font-display uppercase font-semibold text-xl">Apps</p>
+            <ul className="mt-2 text-gray-600">
+              <li>Android</li>
+              <li>iOS</li>
+              <li>Airplay</li>
+              <li>Chromecast</li>
+              <li>Apple TV</li>
+              <li>Amazon FireStick</li>
+              <li>Android TV</li>
+              <li>LG</li>
+              <li>Samsung</li>
+              <li>Vewd</li>
+              <li>Vida-Hisense</li>
+              <li>Foxxum</li>
+              <li>Vizio</li>
+              <li>Hosted HTML5 TVs</li>
+              <li>Android Set Top Boxes</li>
+              <li>Android OEMs</li>
+              <li>Roku</li>
+              <li><a href="#" className="uppercase font-semibold">See more</a></li>
+            </ul>
+          </div>
+
+          <div className="flex-none self-start p-8 w-full lg:w-1/4 offering bg-white rounded-md mb-8 border-2 border-gray-200">
+            <div class="icon-wrapper flex align-center">
+              <APIsIcon />
+            </div>
+            <p className="mt-6 font-display uppercase font-semibold text-xl">APIs</p>
+              <ul className="mt-2 text-gray-600">
+                <li>Xiaomi Patchwall</li>
+                <li>Airtel Xtreme</li>
+                <li>Tata Play</li>
+                <li>DishTV WatchO</li>
+              </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap text-left">
+          <div className="flex-none p-8 w-full lg:w-1/4 offering bg-white rounded-md border-2 border-gray-200">
+            <div class="icon-wrapper flex align-center">
+              <MonetiseIcon />
+            </div>
+            <p className="mt-6 font-display uppercase font-semibold text-xl">Monetise</p>
+            <ul className="mt-2 text-gray-600">
+              <li>Subsriptions</li>
+              <li>Revenue Share Partnerships</li>
+              <li>Instream Ads <span className="text-gray-400">(Coming Soon)</span></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </section> */}
+
+    {/* <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+      <div className="container mx-auto text-center">
+        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+          So what does it take?
+        </h2>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          Quite a lot, actually. There's a lot that goes behind launching and runing a secure streaming service at scale.
+        </p>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          A lot of tech, a lot of money and a lot of time.
+        </p>
+      </div>
+      <div className="container mx-auto mt-16">
+        <div className="flex flex-wrap">
+          <div className="flex-none self-start sticky top-0 px-4 py-4 w-full sm:w-1/2 lg:w-1/4">
+            <p className="font-display uppercase font-semibold text-xl">
+              The Vendor Spaghetti
+            </p>
+            <p className="mt-1 text-gray-600">
+              There exist a pleathora of complicated solutions from multiple vendors held together by hot glue.
+            </p>
+            <p className="mt-1 text-gray-600">
+              A content owner has to jump through multiple hoops to get their content to their audience.
+            </p>
+          </div>
+          <div className="flex-none px-4 py-4 w-full sm:w-1/2 lg:w-3/4 text-center">
+            <div className="vendor-spaghetti-cont">
+              <p className="font-display uppercase font-semibold text-xl text-primary">
+                Content Owner
+                <div class="flex-grow border-b-2 rounded border-primary-lighter mt-4"></div>
+              </p>
+              <div className="vendor-spaghetti-wrapper p-2 pt-4 text-left flex flex-row flex-wrap justify-center">
+                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
+                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">CDNs</p>
+                  <div className="vendors flex flex-row flex-wrap justify-center">
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                  </div>
+                </div>
+                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
+                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Video Delivery Management</p>
+                  <div className="vendors flex flex-row flex-wrap justify-center">
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                  </div>
+                </div>
+                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
+                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Online Video Platforms</p>
+                  <div className="vendors flex flex-row flex-wrap justify-center">
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                  </div>
+                </div>
+                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
+                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Video Players</p>
+                  <div className="vendors flex flex-row flex-wrap justify-center">
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                  </div>
+                </div>
+                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
+                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Encoding/Transcoding</p>
+                  <div className="vendors flex flex-row flex-wrap justify-center">
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                    <div className="vendor p-2"><AWSLogo /></div>
+                    <div className="vendor p-2"><AkamaiLogo /></div>
+                  </div>
+                </div>
+              </div>
+              <p className="font-display uppercase font-semibold text-xl text-primary">
+                <div class="flex-grow border-t-2 rounded border-primary-lighter mb-4"></div>
+                Audience
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> */}
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           Four Major Laminae

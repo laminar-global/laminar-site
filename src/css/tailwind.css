@@ -78,12 +78,49 @@ html {
   padding-bottom: 56.25%;
 }
 
-.streaming-marquee {
+/* .streaming-marquee {
   margin: 0px -32px;
-}
+} */
 
 #contact {
   scroll-behavior: smooth;
+}
+
+.offerings .offering > .icon-wrapper {
+  width: 64px;
+  height: 64px;
+}
+
+.offerings .offering > .icon-wrapper > svg {
+  width: 100%;
+}
+
+.offerings .offering > ul > li {
+  margin: 5px 0;
+}
+
+.offerings .offering > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.vendor-spaghetti-cont .vendor-spaghetti-wrapper .vendor-category > .vendor-category-name {
+  top: -13px;
+}
+
+.vendor-spaghetti-cont .vendor-spaghetti-wrapper .vendor-category > .vendors > .vendor {
+  height: 40px;
+}
+
+.vendor-spaghetti-cont .vendor-spaghetti-wrapper .vendor-category > .vendors > .vendor > svg {
+  height: 100%;
+  opacity: 0.32;
+  filter: grayscale(1);
+}
+
+.vendor-spaghetti-cont .vendor-spaghetti-wrapper .vendor-category > .vendors > .vendor > svg:hover,
+.vendor-spaghetti-cont .vendor-spaghetti-wrapper .vendor-category > .vendors > .vendor > svg:focus {
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

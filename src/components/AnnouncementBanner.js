@@ -21,7 +21,7 @@ function AnnouncementBanner() {
                 </p>
                 </div>
                 <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-                <a href="https://laminarglobal.pipedrive.com/scheduler/vXl8ABSA/meet-us-at-ibc-22" target="_blank" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-semibold text-primary bg-white uppercase font-display hover:bg-primary-darker hover:text-white transition-all duration-200">
+                <a href="https://calendly.com/laminar-streaming/meet-laminar-ibc-22?month=2022-09" target="_blank" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-semibold text-primary bg-white uppercase font-display hover:bg-primary-darker hover:text-white transition-all duration-200">
                     Book A Meeting
                 </a>
                 </div>
