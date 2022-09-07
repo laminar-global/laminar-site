@@ -108,7 +108,7 @@ export default () => (
       </div>
       <div className="container mx-auto mt-16 text-center px-8">
         <div className="flex flex-wrap">
-          <div className="flex-none w-full">
+          {/* <div className="flex-none w-full">
             <p className="font-display uppercase font-semibold text-xl">
               The Vendor Spaghetti
             </p>
@@ -126,26 +126,26 @@ export default () => (
                 <div class="flex-grow border-b-2 rounded border-primary-lighter mt-6"></div>
               </p>
               <div className="p-4 pt-8 text-left flex flex-row flex-wrap justify-center align-center">
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-0">CDNs</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-10">Video Delivery Management</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-20">Online Video Platforms</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-30">Encoding / Transcoding</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-0">Players</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-10">Measurement and Analytics</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-20">Data / DRM</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-30">Exchanges</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-0">Televisions</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-10">OTT Platforms</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-20">IP-Enabled Set Top Boxes</p>
-                <p className="m-4 px-8 py-4 rounded-md border flex-none text-center text-gray-600 shake w-1/4 delay-30">System Integrators</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">CDNs</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">Video Delivery Management</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">Online Video Platforms</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">Encoding / Transcoding</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">Players</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">Measurement and Analytics</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">Data / DRM</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">Exchanges</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">Televisions</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">OTT Platforms</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">IP-Enabled Set Top Boxes</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">System Integrators</p>
               </div>
               <p className="font-display uppercase font-semibold text-xl text-primary">
                 <div class="flex-grow border-t-2 rounded border-primary-lighter mb-6"></div>
                 Audience
               </p>
             </div>
-          </div>
-          <div className="flex-none w-full mt-16">
+          </div> */}
+          <div className="flex-none w-full">
             <p className="font-display uppercase font-semibold text-xl relative problem-statement-name money">
                 Cap-ex Spirals
             </p>
