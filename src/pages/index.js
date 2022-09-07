@@ -30,12 +30,12 @@ export default () => (
           <HeroImage />
         </div>
         <div className="relative z-10 text-center md:text-left md:w-1/2 md:pl-8">
-          <h1 className="font-display uppercase font-semibold text-4xl lg:text-5xl xl:text-6xl leading-none">
-            Zero Turbulence Streaming Infrastructure
+          <h1 className="font-display uppercase text-4xl lg:text-5xl leading-none">
+            <span className="font-semibold text-4xl lg:text-5xl xl:text-6xl">Zero Turbulence</span><br/>
+            Video Streaming PAAS
           </h1>
           <p className="text-xl lg:text-2xl mt-6 text-gray-600">
-            Enterprise-class video-streaming PAAS aimed at content companies looking to run a
-            Netflix-scale service.
+            Enterprise-class video streaming infrastructure aimed at content companies looking to run a Netflix-scale service.
           </p>
           <p className="mt-8 md:mt-12">
             <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white transition-all duration-200" href="https://calendly.com/laminar-streaming/meet-laminar-ibc-22?month=2022-09" target="_blank">Book A Meeting</a>
@@ -49,7 +49,7 @@ export default () => (
     </section>
 
     <section className="pt-20 pb-10 md:pt-40 md:pt-20">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-8">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           Streaming is hard...
         </h2>
@@ -77,7 +77,7 @@ export default () => (
           <span class="text-xl mx-4">Management and Regulatory Compliance</span>
         </div>
       </div>
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-8">
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
           ...but it doesn't have to be.
         </p>
@@ -85,9 +85,133 @@ export default () => (
           Take a look at how we enabled <a className="transition-all duration-200" href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch it's OTT service globally in 12 weeks at no upfront cost.
         </p>
         <div className="flex flex-wrap mt-12 text-left">
-          <div className="flex-none px-4 py-4 w-full">
+          <div className="flex-none w-full">
             <div class="embed-responsive aspect-ratio-16/9 embed-fix border rounded-md">
-              <iframe class="rounded-md embed-responsive-item" src="https://www.youtube.com/embed/fDzNSF384qk?rel=0" title="Laminar and Chaupal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="rounded-md embed-responsive-item" src="https://www.youtube.com/embed/fDzNSF384qk?rel=0&color=white&modestbranding=1&controls=0" title="Laminar and Chaupal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+      <div className="container mx-auto text-center px-8">
+        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+          So what does it take?
+        </h2>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          Quite a lot, actually. There's a lot that goes behind launching and runing a secure streaming service at scale.
+        </p>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          A lot of tech, a lot of money and a lot of time.
+        </p>
+      </div>
+      <div className="container mx-auto mt-16 text-center px-8">
+        <div className="flex flex-wrap">
+          <div className="flex-none w-full">
+            <p className="font-display uppercase font-semibold text-xl">
+              The Vendor Spaghetti
+            </p>
+            <div className="mt-2 text-gray-600">
+              <p>
+                There exist a pleathora of complicated solutions from multiple vendors.
+              </p>
+              <p className="mt-1">
+                A content owner has to jump through multiple hoops to get their content to their audience.
+              </p>
+            </div>
+            <div className="vendor-spaghetti-cont mt-8 lg:px-16">
+              <p className="font-display uppercase font-semibold text-xl text-primary">
+                Content Owner
+                <div class="flex-grow border-b-2 rounded border-primary-lighter mt-6"></div>
+              </p>
+              <div className="p-4 pt-8 text-left flex flex-row flex-wrap justify-center overflow-hidden relative">
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">CDNs</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">Video Delivery Management</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">Online Video Platforms</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">Encoding / Transcoding</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">Players</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">Measurement and Analytics</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">Data / DRM</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">Exchanges</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">Televisions</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">OTT Platforms</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">IP-Enabled Set Top Boxes</p>
+                <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">System Integrators</p>
+              </div>
+              <p className="font-display uppercase font-semibold text-xl text-primary">
+                <div class="flex-grow border-t-2 rounded border-primary-lighter mb-6"></div>
+                Audience
+              </p>
+            </div>
+          </div>
+          <div className="flex-none w-full mt-16">
+            <p className="font-display uppercase font-semibold text-xl relative problem-statement-name money">
+                Cap-ex Spirals
+            </p>
+            <div className="mt-2 text-gray-600 problem-statement-description">
+              <p>
+                The upfront spends, both monetary and of time are massive.
+              </p>
+              <p className="mt-1">
+                A content owner loses crucial time and significant money in setting up a non-scalable platform held together by hot glue.
+              </p>
+            </div>
+            <div className="overflow-x-auto relative mt-8 lg:px-16">
+              <table class="w-full text-left text-gray-600 text-center">
+                <thead class="uppercase bg-gray-400 text-gray-800">
+                  <tr>
+                    <th scope="col" class="w-1/4 py-3 px-6 text-left">Monthly Active Users</th>
+                    <th scope="col" class="w-1/4 py-3 px-6">100K+</th>
+                    <th scope="col" class="w-1/4 py-3 px-6">1M+</th>
+                    <th scope="col" class="w-1/4 py-3 px-6">10M+</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b">
+                    <th scope="row" class="py-4 px-6 text-gray-600 whitespace-nowrap text-left">Back-end</th>
+                    <td class="py-4 px-6">$500K+</td>
+                    <td class="py-4 px-6">$2-5M+</td>
+                    <td class="py-4 px-6">$5-10M+</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <th scope="row" class="py-4 px-6 text-gray-600 whitespace-nowrap text-left">Front-end</th>
+                    <td class="py-4 px-6"></td>
+                    <td class="py-4 px-6"></td>
+                    <td class="py-4 px-6"></td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="py-4 px-6 text-left bg-gray-200">All apps + all devices</td>
+                    <td class="py-4 px-6 bg-gray-200"></td>
+                    <td class="py-4 px-6 bg-gray-200"></td>
+                    <td class="py-4 px-6 bg-gray-200">$3M+</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="py-4 px-6 text-left bg-gray-200">Most apps + major devices</td>
+                    <td class="py-4 px-6 bg-gray-200"></td>
+                    <td class="py-4 px-6 bg-gray-200">$1M+</td>
+                    <td class="py-4 px-6"></td>
+                  </tr>
+                  <tr class="bg-white border-b">
+                    <td class="py-4 px-6 text-left bg-gray-200">Web + Android + iOS</td>
+                    <td class="py-4 px-6 bg-gray-200">$500K+</td>
+                    <td class="py-4 px-6"></td>
+                    <td class="py-4 px-6"></td>
+                  </tr>
+                  <tr class="bg-white border-b">
+                    <th scope="row" class="py-4 px-6 text-gray-600 whitespace-nowrap text-left">Data and Analytics</th>
+                    <td class="py-4 px-6">$100K+</td>
+                    <td class="py-4 px-6">$500K+</td>
+                    <td class="py-4 px-6">$1M+</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <th scope="row" class="py-4 px-6 text-gray-600 whitespace-nowrap text-left">Time Spent</th>
+                    <td class="py-4 px-6">6-9 Months</td>
+                    <td class="py-4 px-6">9-15 Months</td>
+                    <td class="py-4 px-6">12-24 Months</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -98,14 +222,17 @@ export default () => (
 
       <div className="container mx-auto">
 
-        <div className="flex flex-wrap text-left">
+        <div className="flex flex-wrap text-center">
           <div className="flex-none w-full lg:w-1/8">
             <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
-              All of this as soon as you sign up
+              We Change Everything
             </h2>
             <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-              The Laminar Platform has four major moving parts that come together seamlessly to help
-              content creators and companies build a streaming business.
+              With Laminar, you get everything out of the box, <br/>
+              as soon as you sign up.
+            </p>
+            <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+              All major apps and APIs, 30+ distribution channels, a ready to go revenue engine and so much more at one price per user.
             </p>
           </div>
         </div>
@@ -181,119 +308,8 @@ export default () => (
       </div>
     </section> */}
 
-    {/* <section className="pt-20 pb-10 md:pt-40 md:pt-20">
-      <div className="container mx-auto text-center">
-        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
-          So what does it take?
-        </h2>
-        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-          Quite a lot, actually. There's a lot that goes behind launching and runing a secure streaming service at scale.
-        </p>
-        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-          A lot of tech, a lot of money and a lot of time.
-        </p>
-      </div>
-      <div className="container mx-auto mt-16">
-        <div className="flex flex-wrap">
-          <div className="flex-none self-start sticky top-0 px-4 py-4 w-full sm:w-1/2 lg:w-1/4">
-            <p className="font-display uppercase font-semibold text-xl">
-              The Vendor Spaghetti
-            </p>
-            <p className="mt-1 text-gray-600">
-              There exist a pleathora of complicated solutions from multiple vendors held together by hot glue.
-            </p>
-            <p className="mt-1 text-gray-600">
-              A content owner has to jump through multiple hoops to get their content to their audience.
-            </p>
-          </div>
-          <div className="flex-none px-4 py-4 w-full sm:w-1/2 lg:w-3/4 text-center">
-            <div className="vendor-spaghetti-cont">
-              <p className="font-display uppercase font-semibold text-xl text-primary">
-                Content Owner
-                <div class="flex-grow border-b-2 rounded border-primary-lighter mt-4"></div>
-              </p>
-              <div className="vendor-spaghetti-wrapper p-2 pt-4 text-left flex flex-row flex-wrap justify-center">
-                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
-                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">CDNs</p>
-                  <div className="vendors flex flex-row flex-wrap justify-center">
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                  </div>
-                </div>
-                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
-                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Video Delivery Management</p>
-                  <div className="vendors flex flex-row flex-wrap justify-center">
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                  </div>
-                </div>
-                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
-                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Online Video Platforms</p>
-                  <div className="vendors flex flex-row flex-wrap justify-center">
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                  </div>
-                </div>
-                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
-                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Video Players</p>
-                  <div className="vendors flex flex-row flex-wrap justify-center">
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                  </div>
-                </div>
-                <div className="vendor-category m-2 p-4 pt-0 rounded-md border flex-none w-fit max-w-full self-start text-center">
-                  <p className="vendor-category-name text-gray-600 inline-block bg-white relative px-2 leading-0">Encoding/Transcoding</p>
-                  <div className="vendors flex flex-row flex-wrap justify-center">
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                    <div className="vendor p-2"><AWSLogo /></div>
-                    <div className="vendor p-2"><AkamaiLogo /></div>
-                  </div>
-                </div>
-              </div>
-              <p className="font-display uppercase font-semibold text-xl text-primary">
-                <div class="flex-grow border-t-2 rounded border-primary-lighter mb-4"></div>
-                Audience
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
     <section className="pt-20 pb-10 md:pt-40 md:pt-20">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-8">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           Four Major Laminae
         </h2>
