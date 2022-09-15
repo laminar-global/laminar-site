@@ -80,7 +80,7 @@ export default () => (
           ...but it doesn't have to be.
         </p>
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-          Take a look at how we enabled <a className="transition-all duration-200" href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch it's OTT service globally in 12 weeks at no upfront cost.
+          Take a look at how we enabled <a className="transition-all duration-200" href="https://chaupal.tv/" target="_blank">Chaupal</a> to launch its OTT service globally in 12 weeks at no upfront cost.
         </p>
         <div className="flex flex-wrap mt-12 text-left">
           <div className="flex-none w-full">
