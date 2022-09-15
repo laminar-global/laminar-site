@@ -18,8 +18,6 @@ import VideoIcon from '../svg/VideoIcon';
 import AppsIcon from '../svg/AppsIcon';
 import MonetiseIcon from '../svg/MonetiseIcon';
 import APIsIcon from '../svg/APIsIcon';
-import AkamaiLogo from '../svg/AkamaiLogo';
-import AWSLogo from '../svg/AWSLogo';
 
 export default () => (
   <Layout>
@@ -100,7 +98,7 @@ export default () => (
           So what does it take?
         </h2>
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
-          Quite a lot, actually. There's a lot that goes behind launching and runing a secure streaming service at scale.
+          Quite a lot, actually. There's a lot that goes behind launching and running a secure streaming service at scale.
         </p>
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
           A lot of tech, a lot of money and a lot of time.
@@ -108,7 +106,7 @@ export default () => (
       </div>
       <div className="container mx-auto mt-16 text-center px-8">
         <div className="flex flex-wrap">
-          {/* <div className="flex-none w-full">
+          <div className="flex-none w-full">
             <p className="font-display uppercase font-semibold text-xl">
               The Vendor Spaghetti
             </p>
@@ -144,8 +142,8 @@ export default () => (
                 Audience
               </p>
             </div>
-          </div> */}
-          <div className="flex-none w-full">
+          </div>
+          <div className="flex-none w-full mt-16">
             <p className="font-display uppercase font-semibold text-xl relative problem-statement-name money">
                 Cap-ex Spirals
             </p>
