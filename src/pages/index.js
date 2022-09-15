@@ -121,7 +121,7 @@ export default () => (
             <div className="vendor-spaghetti-cont mt-8 lg:px-16">
               <p className="font-display uppercase font-semibold text-xl text-primary">
                 Content Owner
-                <div class="flex-grow border-b-2 rounded border-primary-lighter mt-6"></div>
+                <span class="block border-b-2 rounded border-primary-lighter mt-6"></span>
               </p>
               <div className="p-4 pt-8 text-left flex flex-row flex-wrap justify-center align-center">
                 <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">CDNs</p>
@@ -138,7 +138,7 @@ export default () => (
                 <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-30">System Integrators</p>
               </div>
               <p className="font-display uppercase font-semibold text-xl text-primary">
-                <div class="flex-grow border-t-2 rounded border-primary-lighter mb-6"></div>
+                <span class="block border-t-2 rounded border-primary-lighter mb-6"></span>
                 Audience
               </p>
             </div>
