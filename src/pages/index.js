@@ -36,8 +36,7 @@ export default () => (
             Enterprise-class video streaming infrastructure aimed at content companies looking to run a Netflix-scale service.
           </p>
           <p className="mt-8 md:mt-12">
-            <a class="lg:mr-2 lg:inline-block block mb-2 py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white transition-all duration-200" href="https://calendly.com/laminar-streaming/meet-laminar-ibc-22?month=2022-09" target="_blank">Book A Meeting</a>
-            <a class="lg:inline-block block py-4 px-12 font-display uppercase bg-white hover:bg-gray-100 rounded text-primary text-center hover:text-primary transition-all duration-200" href="#contact">Get In Touch</a>
+            <a class="lg:inline-block block py-4 px-12 font-display uppercase bg-primary hover:bg-primary-darker rounded text-white text-center hover:text-white transition-all duration-200" href="#contact">Get In Touch</a>
             {/* <Button size="lg" href="#contact">
               Get In Touch
             </Button> */}
@@ -123,7 +122,7 @@ export default () => (
                 Content Owner
                 <span class="block border-b-2 rounded border-primary-lighter mt-6"></span>
               </p>
-              <div className="p-4 pt-8 text-left flex flex-row flex-wrap justify-center align-center">
+              <div className="p-4 text-left flex flex-row flex-wrap justify-center align-center">
                 <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-0">CDNs</p>
                 <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-10">Video Delivery Management</p>
                 <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 shake delay-20">Online Video Platforms</p>
