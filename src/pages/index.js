@@ -308,6 +308,49 @@ export default () => (
     <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center px-8">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+          We change everything
+        </h2>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          Aim as high as you can, leap as far as you dare
+        </p>
+        {/* <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          We take care of ALL the tech. We are ready to deploy within 4 weeks. Everything at one price per user.
+        </p> */}
+      </div>
+      <div className="mt-16 text-left flex flex-row flex-wrap justify-center align-center px-8 sm:p-0">
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can control what different users see</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can publish some content to one country and not to another</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can manage content licenses</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can show different age rating labels in different countries</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can match series, seasons and episodes</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have trailers and additional content</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have multiple plans in multiple countries</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can charge extra to show 4K content</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can control the number of users watching of a single subscription</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can allow users to watch on only specific devices</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can offer discounts, promo codes and allow people to redeem coupons</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have different UI on different devices</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have different UI, per device, in every country</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can change your UI whenever you please</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have custom pages / custom collections / custom search tags</p>
+        <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can partner with a telco / bundling partner / new payment gateway / new set top box / new TV</p>
+      </div>
+    </section>
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+      <div className="container mx-auto text-center px-8">
+        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
+          We change everything
+        </h2>
+        <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
+          We take care of ALL the tech. We are ready to deploy within 4 weeks. Everything at one price per user.
+        </p>
+      </div>
+    </section>
+
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+      <div className="container mx-auto text-center px-8">
+        <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           Four Major Laminae
         </h2>
         <p className="text-xl lg:text-2xl mt-2 mx-auto w-full md:w-1/2 text-gray-600">
