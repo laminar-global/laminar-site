@@ -339,7 +339,7 @@ export default () => (
       </div>
     </section>
 
-    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+    {/* <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center px-8">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           We change everything
@@ -348,7 +348,7 @@ export default () => (
           We take care of ALL the tech. We are ready to deploy within 4 weeks. Everything at one price per user.
         </p>
       </div>
-    </section>
+    </section> */}
 
     <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center px-8">
