@@ -334,10 +334,12 @@ export default () => (
         <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can change your UI whenever you please</p>
         <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can have custom pages / custom collections / custom search tags</p>
         <p className="m-4 px-8 py-4 rounded-md border flex-none w-fit max-w-full self-start text-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200">You can partner with a telco / bundling partner / new payment gateway / new set top box / new TV</p>
+        <div className="w-full h-0"></div>
+        <p className="mt-8 flex-none w-fit max-w-full self-start text-center text-gray-300 text-5xl">and so much more...</p>
       </div>
     </section>
 
-    {/* <section className="pt-20 pb-10 md:pt-40 md:pt-20">
+    <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center px-8">
         <h2 className="font-display uppercase font-semibold text-3xl lg:text-5xl">
           We change everything
@@ -346,7 +348,7 @@ export default () => (
           We take care of ALL the tech. We are ready to deploy within 4 weeks. Everything at one price per user.
         </p>
       </div>
-    </section> */}
+    </section>
 
     <section className="pt-20 pb-10 md:pt-40 md:pt-20">
       <div className="container mx-auto text-center px-8">
